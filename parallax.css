@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+}
+
+.sectie {
+  border: 1px solid blue;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 2em;
+}
+/* alleen de secties met parallax achtergrond */
+.sectie--achtergrond{
+  padding: 20vh 3em;
+  color: rgba(255,255,255, .7);
+  font-size: 2em;
+  text-shadow: 0 0 14px black;
+  overflow-x: hidden;
+}
+
+.sectie--2{
+  background-image: url('img/back2.png');
+}
+.sectie--4{
+  background-image: url('img/back1.png');
+}
+
+.sectie--4 span{
+transition: margin-left 1s ease-out; 
+}
+
+.sectie--4 span:nth-child(2){
+  color: red;
+}
+
+.sectie--4__kop span:nth-child(1){
+  margin-left: -300px;
+}
+
+.sectie--4__kop span:nth-child(2){
+  margin-left: +700px;
+}
+.sectie--4__kop span:nth-child(3){
+  margin-left: +900px;
+}
+.sectie--6{
+  background-image: url('img/back3.png');
+}
